@@ -21,9 +21,6 @@ const RandomName = () => {
     <div style={{ width: "300px" }}>
       <h2>Random Name</h2>
       {generateName()}
-      <button style={{ marginTop: "10px" }} onClick={generateName}>
-        Generate a new One!
-      </button>
     </div>
   );
 };

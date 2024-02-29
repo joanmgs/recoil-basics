@@ -1,4 +1,4 @@
-import { selector } from "recoil";
+import { selector, selectorFamily } from "recoil";
 import { numberOfClicks } from "../atoms";
 
 export const clicksOperated = selector({
@@ -15,9 +15,9 @@ export const clicksOperated = selector({
   },
 });
 
-export const randomName = selector({
+export const randomName = selectorFamily({
   key: "randomName",
-  get: async () => {
+  get: () => async () => {
     const rawResponse = await fetch(`https://randomuser.me/api/`);
     const response = await rawResponse.json();
 

@@ -2,6 +2,15 @@
 
 Project created with Vite + TS, applying basic functionalities of RecoilJS.
 
+## Set up
+
+To install the project, locate it in the root of the project and trigger the next scripts:
+
+``` 
+> npm install 
+> npm run dev
+```
+
 ## Atoms
 
 You can discover a counter that utilizes atoms to share its value between components.
